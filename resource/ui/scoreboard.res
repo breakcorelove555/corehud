@@ -49,7 +49,7 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlueTeamImage"
 		"xpos"			"7"
-		"ypos"			"9"
+		"ypos"			"20"
 		"zpos"			"20"
 		"wide"			"60"
 		"tall"			"60"
@@ -116,8 +116,8 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"RedTeamImage"
 		"fieldName"		"BlueTeamImage"
-		"xpos"			"571"
-		"ypos"			"-5"
+		"xpos"			"545"
+		"ypos"			"-3"
 		"zpos"			"20"
 		"wide"			"80"
 		"tall"			"80"
@@ -184,7 +184,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamLabel"
-		"font"			"ScoreboardTeamNameNew"
+		"font"			"VCROSDMono12"
 		"labelText"		"%blueteamname%"
 		"textAlignment"		"west"
 		"xpos"			"80"
@@ -206,7 +206,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamScore"
-		"font"			"ScoreboardTeamScoreNew"
+		"font"			"VCROSDMono36"
 		"labelText"		"%blueteamscore%"
 		"textAlignment"		"east"
 		"xpos"			"175"
@@ -228,7 +228,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamScoreDropshadow"
-		"font"			"ScoreboardTeamScoreNew"
+		"font"			"VCROSDMono12"
 		"fgcolor"		"Black"
 		"labelText"		"%blueteamscore%"
 		"textAlignment"		"east"
@@ -239,8 +239,8 @@
 		"tall"			"55"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		
 		if_mvm
 		{
@@ -251,13 +251,13 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamPlayerCount"
-		"font"			"ScoreboardTeamCountNew"
+		"font"			"VCROSDMono12"
 		"labelText"		"%blueteamplayercount%"
 		"textAlignment"		"west"
 		"xpos"			"80"
-		"ypos"			"42"
-		"wide"			"160"
-		"tall"			"15"
+		"ypos"			"26"
+		"wide"			"300"
+		"tall"			"30"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -272,7 +272,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamLabel"
-		"font"			"ScoreboardTeamNameNew"
+		"font"			"VCROSDMono12"
 		"labelText"		"%redteamname%"
 		"textAlignment"		"east"
 		"xpos"			"401"
@@ -294,7 +294,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamScore"
-		"font"			"ScoreboardTeamScoreNew"
+		"font"			"VCROSDMono36"
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
 		"xpos"			"368"
@@ -327,8 +327,8 @@
 		"tall"			"55"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		
 		if_mvm
 		{
@@ -339,11 +339,11 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamPlayerCount"
-		"font"			"ScoreboardTeamCountNew"
+		"font"			"VCROSDMono12"
 		"labelText"		"%redteamplayercount%"
 		"textAlignment"		"east"
 		"xpos"			"401"
-		"ypos"			"42"
+		"ypos"			"34"
 		"wide"			"160"
 		"tall"			"15"
 		"autoResize"		"0"
@@ -650,17 +650,18 @@
 		"fieldName"		"classmodelpanel"
 		
 		"xpos"			"-10"
-		"ypos"			"185"
+		"ypos"			"240"
 		"zpos"			"10"		
 		"wide"			"130"
 		"tall"			"260"
-		"autoResize"	"0"
+		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		
 		"render_texture"	"0"
-		"fov"			"12"
+		"fov"			"30"
+		"force_pos"	"1"
 		"allow_rot"		"1"
 
 		"disable_speak_event"	"1"
@@ -672,7 +673,7 @@
 				
 		"model"
 		{
-			"force_pos"	"1"
+			"force_pos"	"0"
 
 			"angles_x" "0"
 			"angles_y" "172"
@@ -680,10 +681,10 @@
 			"origin_x" "200"
 			"origin_y" "0"
 			"origin_z" "-60"
-			"frame_origin_x"	"0"
-			"frame_origin_y"	"0"
-			"frame_origin_z"	"0"
-			"spotlight" "1"
+			"frame_origin_x"	"-10"
+			"frame_origin_y"	"240"
+			"frame_origin_z"	"10"
+			"spotlight" "0"
 		
 			"modelname"		""
 		}
@@ -695,7 +696,7 @@
 			}
 			"Scout"
 			{
-				"fov"			"25"
+				"fov"			"30"
 				"angles_x"		"-17"
 				"angles_y"		"145"
 				"angles_z"		"0"
@@ -705,7 +706,7 @@
 			}
 			"Sniper"
 			{
-				"fov"			"25"
+				"fov"			"30"
 				"angles_x"		"-10"
 				"angles_y"		"172"
 				"angles_z"		"0"
@@ -715,7 +716,7 @@
 			}
 			"Soldier"
 			{
-				"fov"			"25"
+				"fov"			"30"
 				"angles_x"		"-10"
 				"angles_y"		"170"
 				"angles_z"		"0"
@@ -725,7 +726,7 @@
 			}
 			"Demoman"
 			{
-				"fov"			"25"
+				"fov"			"30"
 				"angles_x"		"-13"
 				"angles_y"		"200"
 				"angles_z"		"0"
@@ -735,7 +736,7 @@
 			}
 			"Medic"
 			{
-				"fov"			"20"
+				"fov"			"30"
 				"angles_x"		"-5"
 				"angles_y"		"178"
 				"angles_z"		"0"
@@ -745,7 +746,7 @@
 			}
 			"Heavy"
 			{
-				"fov"			"20"
+				"fov"			"30"
 				"angles_x"		"-5"
 				"angles_y"		"200"
 				"angles_z"		"0"
@@ -755,7 +756,7 @@
 			}
 			"Pyro"
 			{
-				"fov"			"20"
+				"fov"			"30"
 				"angles_x"		"-5"
 				"angles_y"		"172"
 				"angles_z"		"0"
@@ -765,7 +766,7 @@
 			}
 			"Spy"
 			{
-				"fov"			"20"
+				"fov"			"30"
 				"angles_x"		"-5"
 				"angles_y"		"160"
 				"angles_z"		"0"
@@ -775,7 +776,7 @@
 			}
 			"Engineer"
 			{
-				"fov"			"20"
+				"fov"			"30"
 				"angles_x"		"-10"
 				"angles_y"		"168"
 				"angles_z"		"0"
@@ -1028,7 +1029,7 @@
 				"wrap"			"0"
 				"labelText"		"%playername%"
 				"textAlignment"	"east"
-				"font"			"HudFontSmallest"
+				"font"			"VCROSDMono6"
 			}
 			"Score"
 			{
@@ -1107,7 +1108,7 @@
 				"wrap"			"0"
 				"labelText"		"%playername%"
 				"textAlignment"	"west"
-				"font"			"HudFontSmallest"
+				"font"			"VCROSDMono6"
 			}
 			"Score"
 			{
